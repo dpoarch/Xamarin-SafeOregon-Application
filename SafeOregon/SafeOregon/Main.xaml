@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeOregon.Main">
+  <StackLayout Margin="20">
+    <Button x:Name="call" Text="Call Tip Line" Clicked="OnCall" />
+    <Button x:Name="submit" Text="Submit a Tip" Clicked="OnNextPageButtonClicked" />
+    <Button x:Name="resources" Text="Resources" Clicked="OnResource" />
+  </StackLayout>
+</ContentPage>

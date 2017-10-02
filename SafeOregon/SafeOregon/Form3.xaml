@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeOregon.Form3">
+  <StackLayout Margin="20">
+    <Label Text="How many times has this situation happened?"  />
+    <Picker x:Name="picker1" Title="Select" />
+    <Label Text="Have you reported this incident to an adult?"  />
+    <Picker x:Name="picker2" Title="Select" SelectedIndexChanged="OnPickerSelectedIndexChanged" />
+    <Label x:Name="lbladultName" Text="Who?"  />
+    <Entry x:Name="adultName" />
+    <Button x:Name="btnNext" Text="Next" Clicked="OnNextPageButtonClicked" />
+  </StackLayout>
+</ContentPage>

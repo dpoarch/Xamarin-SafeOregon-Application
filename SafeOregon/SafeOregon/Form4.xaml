@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeOregon.Form4">
+  <StackLayout Margin="20">
+    <Label Text="Who are you?"  />
+    <Picker x:Name="who_are_you" Title="Select" />
+    <Label Text="What is your name?(Optional)"  />
+    <Entry x:Name="your_name" />
+    <Label Text="You can upload a photo or short video upto 20MB by clicking on the upload button below"  />
+    <Label x:Name="txtBase"/>
+    <Image x:Name="image" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+    <Button x:Name="btnUpload" Text="Upload" Clicked="OnUploadButtonClicked" />
+    <Button x:Name="buttonSubmit" Text="Submit" Clicked="OnSubmitButton"/>
+  </StackLayout>
+</ContentPage>
